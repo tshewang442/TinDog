@@ -1,0 +1,150 @@
+body {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: bold;
+}
+p {
+  color: #8f8f8f;
+}
+.big-heading {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.section-heiding {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* container */
+.container-fluid {
+    padding: 7% 15%; /*7% top and buttom and 15% left and right -totoral padding:7% 15%;*/
+}
+
+/* SEction */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+.white-section {
+  background-color: #fff;/*to cut the image*/
+}
+
+/* navigation bar */
+.navbar {
+    padding:0 0 4.5rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  /* font-family: "Mentserrat-Light" /* it is suppose to thin the latter but doesn't work*/
+}
+/* Download Button */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+/* Title Section */
+
+#title .container-fluid {/*For the container-fluid class that is contained inside the title section then apply this specific padding. This will over ride the previous one. */
+  padding: 3% 15% 7%;/*3%top, 15% left and right, 7% buttom*/
+  text-align: left;
+}/*space between #title and .container-fluid is necessary*/
+
+/* Title Image */
+.title-image {
+  width: 22%; /*Actual heignt in tutoral is 60%*/
+  transform: rotate(25deg);
+  position: absolute;/*to cut the image*/
+  right:25%;/* Because it is already position absulate and i can specify that it should just be 30% from right  */
+}
+
+/* Feature Section */
+#features {
+  position: relative;/*to cut the image*/
+  z-index: 1;/*to cut the image bring features section front considering default z-index is 0*/
+}
+.feature-title {
+  font-size: 1.5rem;
+}
+.feature-box {
+  padding: 4%;
+  /* padding: 15% 4% 0 4%; /*contract text in paragraph */
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: #ff4c68;
+}
+
+/* Testimonials Section */
+#testimonials {
+  /* padding: 7% 15%; move this padding to .carousel-item"
+  class so to have button outside of the padding, so that it has more space and it is more visible and more easy to click on.. */
+  background-color: #ef8172; /*set text color in h2*/
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-logo {
+  width:15%;
+  margin: 20px 20px 50px; /*(top, left, buttom)*/
+}
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #000;
+}
+.Pricing-column {
+  padding: 3% 2%;
+}
+.social-icon {
+  margin: 20px 10px;
+  /* padding: 1%; */
+  transition: scale 0.25s;
+}
+.social-icon:hover {
+  transform: scale(1.5);
+}
+@media (max-width:1028px) { /*When our view port is 1028px or smaller, we want to change our position back to static*/
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+.top-icon {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: fixed;/*float*/
+  right: 20px;
+  bottom: 20px;
+  color: gray;
+}
